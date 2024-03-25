@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+:root {
+  --primary: #fdf0d1;
+  --on-primary: #643843;
+
+  --secondary: #ac7d88;
+  --on-secondary: #fdf0d1;
+
+  --shadow: #40404040;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+body {
+  height: 100%;
+  background: var(--primary);
+  color: var(--on-primary);
+  font-family: "Comfortaa", sans-serif;
+}
+
+#hero {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+@media screen and (max-width: 600px) {
+  #hero {
+    flex-direction: column;
+  }
+
+  #hero #intro-text {
+    align-items: center;
+  }
+}
+
+#hero #intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#hero #intro-text {
+  & h1 {
+    margin-block: 0.5em;
+    padding: 0;
+  }
+
+  & h2 {
+    margin-block: 0.25em;
+    padding: 0;
+  }
+
+  & h3 {
+    margin-block: 0.1em;
+    padding: 0;
+  }
+}
+
+#hero span.name {
+  color: var(--on-secondary);
+  background: var(--secondary);
+  padding: 0.25em;
+  border-radius: 0.25em;
+}
+
+.profile-image {
+  border-radius: 100%;
+  height: 15rem;
+  box-shadow: 0 0 0.5rem var(--shadow);
+}
+
+#site-icons {
+  display: flex;
+  height: 100%;
+  gap: 1rem;
+  height: 1.5rem;
+  width: 100%;
+  margin-block: 1em;
+
+  & a {
+    display: block;
+  }
+
+  & a svg {
+    width: 1em;
+    height: 1em;
+    stroke: var(--on-primary);
+    fill: var(--on-primary);
+  }
+}
