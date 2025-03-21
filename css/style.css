@@ -10,6 +10,18 @@
   --shadow: #40404040;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #643843;
+    --on-primary: #fdf0d1;
+
+    --secondary: #fdf0d1;
+    --on-secondary: #ac7d88;
+
+    --shadow: #20202080;
+  }
+}
+
 h1 {
   font-size: 3rem;
 }
